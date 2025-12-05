@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Solid Snake</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="top-info">
+    <h2>Projet Nuit de l’Info – Hidden Snake</h2>
+    <p>
+      Solid Snake est un soldat d'élite expert en infiltration, en combat rapproché et se camoufle souvent dans une boîte en carton (Appartenant à la série de jeux vidéo Metal Gear).
+    </p>
+  </div>
+
+
+  <div class="game-layout"> 
+    <div class="wrap">
+      <div class="game-card">
+        <header>
+          <h1>Solid Snake</h1>
+          <div class="score">Score: <span id="score">0</span></div>
+        </header>
+
+        <canvas id="game"></canvas>
+
+        <button id="restartBtn" style="display:none">
+          Game Over ! Recommencer ?
+        </button>
+
+        <footer class="hint">
+          Contrôles : Flèches/ZQSD — Espace = pause
+        </footer>
+      </div>
+    </div>
+
+    <aside class="scoreboard"> 
+      <p>Score obtenu : <span id="finalScore">0</span></p>
+      <p>Meilleur score : <span id="bestScore">0</span></p>
+
+      <h3>Défi nuit de l'info de cette page</h3>
+      <p class="rules">
+        • Le défi: Hidden Snake, cachez au sein de votre site un jeu de snake.<br>
+        • Le défi: On veut du gros pixel !, Ajouter un élément rétro gaming à l'une des pages de votre production.<br>
+        • Nuit de l'info 2025 , Pour respecter le thème NIRD cette partie du site n'a aucun lien avec des licences logicielle pour éviter une dépendance logiciel et non durable.<br>
+        </p>
+    </aside>
+  </div>
+
+  <script src="snake.js"></script>
+</body>
+</html>

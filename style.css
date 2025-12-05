@@ -1,0 +1,135 @@
+/* centrage de la page et dégradé */
+body {
+  font-family: monospace;
+  background: linear-gradient(180deg,#0f1724,#36422e);
+  color: #33ff66;
+  letter-spacing: 1px;
+  margin: 5;
+  padding: 10px 0;
+  margin-bottom: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Zone de présentation de Solid Snake */
+.top-info {
+  width: 80%;
+  text-align: center;
+  color: #9c9c9c;
+  background: #0a0a0a;
+  border: 3px solid #33ff66;
+  font-family: monospace;
+  box-shadow: 0 0 10px rgba(0,255,100,0.3);
+}
+
+.top-info h2 {
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.top-info p {
+  margin-top: 4px;
+  font-size: 12px;
+}
+
+/* taille du jeu */
+.wrap {
+  width:min(450px,60vw);  
+  height:min(450px,60vw);
+  align-content: center;
+}
+
+.game-card {
+  background: #000000;
+  padding: 20px;
+  border: 4px solid #33ff66;
+  border-radius: 4px;
+  box-shadow: 0 0 15px #00ff66;
+  position: relative;
+}
+
+.game-layout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+header {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:10px;
+}
+
+h1 { font-size:18px; margin:0; }
+
+.score { font-weight:700; color:#10b981; }
+
+/* jeu en lui même */
+canvas {
+  background: #001900;
+  width: 98%;
+  height: 98%;
+  border: 3px solid #33ff66;
+  image-rendering: pixelated;
+  box-shadow: inset 0 0 20px rgba(0,255,0,0.2);
+}
+
+/* Bouton de recommencement */
+#restartBtn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 12px 20px;
+  font-family: monospace;
+  font-weight: bold;
+  background: #33ff66;
+  color: #001900;
+  border: 3px solid #00cc44;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0 0 12px #00ff66;
+  text-transform: uppercase;
+}
+
+#restartBtn:hover {
+  background: #55ff88;
+  box-shadow: 0 0 20px #55ff88;
+}
+
+/* Zone des Scores */
+.scoreboard {
+  width: 130px;
+  padding: 10px;
+  background: #111;
+  border: 3px solid #33ff66;
+  color: #33ff66;
+  font-family: "Press Start 2P", monospace;
+  font-size: 10px;
+  line-height: 14px;
+  text-align: left;
+}
+
+.scoreboard h2,
+.scoreboard h3 {
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+  font-size: 10px;
+}
+
+/* Zone des Règles du jeu */
+.rules {
+  font-size: 10px;
+}
+
+
+.hint {
+  font-size:13px;
+  color:#94a3b8;
+  margin-top:10px;
+}
